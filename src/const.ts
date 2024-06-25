@@ -1,1 +1,0 @@
-export const API = "http://bore.pub:13094/api/v1"
