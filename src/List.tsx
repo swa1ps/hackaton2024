@@ -40,16 +40,16 @@ const List = () => {
       <>
         <Skeleton.Input block style={{ marginBottom: 20 }} />
         <Row gutter={16}>
-          <Col sm={8} md={12}>
+          <Col sm={8} md={8}>
             <Skeleton />
           </Col>
-          <Col sm={8} md={12}>
+          <Col sm={8} md={8}>
             <Skeleton />
           </Col>
-          <Col sm={8} md={12}>
+          <Col sm={8} md={8}>
             <Skeleton />
           </Col>
-          <Col sm={8} md={12}>
+          <Col sm={8} md={8}>
             <Skeleton />
           </Col>
         </Row>
@@ -63,7 +63,7 @@ const List = () => {
         {list.map((item) => {
           const date = dayjs(item.start_at).format("DD.MM.YY HH:mm");
           return (
-            <Col sm={8} md={12}>
+            <Col sm={8} md={8}>
               <Link to={`/videos/${item.id}`}>
                 <Card size="small" className={styles.card} hoverable>
                   <video src={item.filepath} className={styles.video}></video>
